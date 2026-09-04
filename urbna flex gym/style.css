@@ -1,0 +1,3091 @@
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body{
+    font-family:Arial, sans-serif;
+    padding-top: 80px;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#111;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+}
+.logo{
+    color:#ff4500;
+    font-size:30px;
+    font-weight:bold;
+}
+.logo-img{
+    height: 100px;/*adjust size*/
+    width:auto;
+    display:block;
+}
+.logo span{
+    color:white;
+    font-size:22px;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff4500;
+}
+.hero{
+    height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("OIP.webp");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+.hero button{
+    transition:all 0.3s ease;
+}
+
+.hero button:hover{
+    background: white;
+    color: orangered;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255,102,0,0.5);
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+    transition:0.3s;
+      text-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+
+}
+.hero h1:hover{
+    letter-spacing:3px;
+    font-size: 70px;
+
+}
+
+.hero p{
+    font-size:24px;
+    margin-bottom:30px
+}
+    .btn{
+    display:inline-block;
+    background:#ff4500;
+    color:white;
+    padding:15px 40px;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:0.3s;
+}
+.btn:hover{
+    background:#ff6a00;
+    transform:translateY(-5px);
+}
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:20px;
+        gap:15px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:20px;
+    }
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: orangered;
+}
+/* Join Now Button */
+
+.join-btn {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 15px 40px;
+
+    background: #ff9800;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+
+}
+
+
+.join-btn:hover {
+
+    background: white;
+
+    color: black;
+
+    transform: scale(1.08);
+
+}
+/* ==========================
+   Why Choose Us Section
+========================== */
+
+.why-us {
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+    background: #111;
+
+    color: white;
+
+}
+
+
+.why-us h2 {
+
+    font-size: 40px;
+
+    margin-bottom: 50px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+.why-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.why-container div {
+
+    width: 280px;
+
+    background: #222;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+
+    transition: 0.4s;
+
+}
+
+
+
+.why-container div:hover {
+
+    transform: translateY(-10px);
+
+    border: 2px solid #ff9800;
+
+}
+
+
+
+.why-container h3 {
+
+    color: #ff9800;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.why-container p {
+
+    color: #ddd;
+
+    line-height: 1.6;
+
+}
+
+
+
+
+
+
+/* ==========================
+   Home CTA Section
+========================== */
+
+
+.home-cta {
+
+    padding: 90px 20px;
+
+    text-align: center;
+
+    color: white;
+
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+
+    url("images/gym-background.jpg");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+
+.home-cta h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.home-cta p {
+
+    font-size: 20px;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+
+/* Button */
+
+.home-cta .btn {
+
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    background: #ff9800;
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+
+.home-cta .btn:hover {
+
+    background: white;
+
+    transform: scale(1.05);
+
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 10%;
+    background: #111;
+    color: white;
+    flex-wrap: wrap;
+}
+.about-image img{
+    width: 450px;
+    border-radius: 15px;
+}
+.about-text{
+    max-width: 500px;
+}
+.about-text h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: orangered;
+}
+.about-text p{
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.about-text ul{
+    list-style: none;
+    padding: 0;
+}
+.about-text li{
+    margin: 15px 0;
+    font-size: 18px;
+}
+.about-text button{
+    margin-top: 25px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    background: orangered;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.about-text button:hover{
+    background: white;
+    color: orangered;
+}
+.page-banner{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.page-banner h1{
+    font-size:50px;
+    color:#ff5a00;
+    margin-bottom:10px;
+}
+
+.page-banner p{
+    color:#ddd;
+    font-size:20px;
+}
+
+.about-page{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.about-card{
+    background:#2b2b2b;
+    color:white;
+    padding:35px;
+    margin-bottom:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+    transition:0.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(255,90,0,.4);
+}
+
+.about-card h2{
+    color:#ff5a00;
+    margin-bottom:20px;
+}
+
+.about-card p{
+    line-height:1.8;
+    color:#ddd;
+}
+
+.about-card ul{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+.about-card ul li{
+    margin-bottom:12px;
+    color:#ddd;
+}
+
+.active{
+    color:#ff5a00;
+    font-weight:bold;
+}
+.learn-more {
+    display: inline-block;
+    background-color: white;
+    color: #ff4d00;
+    text-decoration: none;
+    padding: 16px 35px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #ff4d00;
+    color: white;
+    transform: translateY(-3px);
+}
+/* ================================= */
+/* PROFESSIONAL SERVICES PAGE */
+/* ================================= */
+
+
+/* Services Hero */
+
+.services-hero {
+    padding: 100px 8%;
+    background-color: #111;
+    text-align: center;
+}
+
+.services-hero h2 {
+    color: #ff4d00;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.services-hero p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* Services Introduction */
+
+.services-intro {
+    padding: 70px 8%;
+    background-color: #181818;
+    text-align: center;
+}
+
+.services-intro h2 {
+    color: #ff4d00;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.services-intro p {
+    color: #ddd;
+    max-width: 850px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* Services Cards */
+
+.services-page {
+    padding: 80px 8%;
+    background-color: #111;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* Individual Service */
+
+.service-box {
+    background-color: #1c1c1c;
+    padding: 40px 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    border: 1px solid #292929;
+
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+
+    border-color: #ff4d00;
+
+    box-shadow: 0 10px 30px rgba(255, 77, 0, 0.25);
+}
+
+
+/* Service Icon */
+
+.service-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+
+.service-box h3 {
+    color: #ff4d00;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+.service-box p {
+    color: #ddd;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Benefits Section */
+
+.service-benefits {
+    padding: 80px 8%;
+    background-color: #181818;
+    text-align: center;
+}
+
+
+.service-benefits h2 {
+    color: #ff4d00;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.benefit {
+    width: 280px;
+    padding: 30px;
+    background-color: #222;
+    border-radius: 15px;
+}
+
+
+.benefit h3 {
+    color: white;
+    font-size: 20px;
+}
+
+
+.benefit p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+
+/* Call To Action */
+
+.services-cta {
+    padding: 90px 8%;
+    background-color: #ff4d00;
+    text-align: center;
+}
+
+
+.services-cta h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+
+.services-cta p {
+    color: white;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+
+.services-cta .learn-more {
+    display: inline-block;
+
+    background-color: white;
+    color: #ff4d00;
+
+    text-decoration: none;
+
+    padding: 15px 35px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.services-cta .learn-more:hover {
+    background-color: #111;
+    color: white;
+}
+/* Services Section */
+
+.services-section {
+    min-height: 600px;
+    padding: 80px 8%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.services-image {
+    width: 45%;
+}
+
+.services-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.services-content {
+    width: 45%;
+}
+
+.services-content h2 {
+    color: #ff4d00;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.services-content p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.services-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.services-content li {
+    color: white;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.services-content .learn-more {
+    display: inline-block;
+    background-color: white;
+    color: #ff4d00;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.services-content .learn-more:hover {
+    background-color: #ff4d00;
+    color: white;
+    transform: translateY(-3px);
+}
+/* =========================================================
+   MEMBERSHIP PAGE ONLY
+   DO NOT AFFECT OTHER PAGES
+========================================================= */
+
+
+/* =========================
+   MEMBERSHIP HERO
+========================= */
+
+.membership-hero {
+    min-height: 380px;
+    padding: 90px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.72),
+            rgba(0,0,0,0.90)
+        ),
+        url("images/gym-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.membership-hero h2 {
+    color: #ffffff;
+    font-size: clamp(40px, 6vw, 62px);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.membership-hero h2::after {
+    content: "";
+    display: block;
+
+    width: 65px;
+    height: 3px;
+
+    background: #ff4d00;
+
+    margin: 18px auto;
+}
+
+.membership-hero p {
+    max-width: 700px;
+
+    color: #cccccc;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   MEMBERSHIP INTRO
+========================= */
+
+.membership-intro {
+    padding: 65px 20px 35px;
+
+    background: #0d0d0d;
+
+    text-align: center;
+}
+
+.membership-intro h2 {
+    color: #ffffff;
+
+    font-size: 42px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+.membership-intro h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 3px;
+
+    background: #ff4d00;
+
+    margin: 15px auto;
+}
+
+.membership-intro p {
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #aaaaaa;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   MEMBERSHIP CARDS
+========================================================= */
+
+.membership-container {
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 40px 5% 90px;
+
+    background: #0d0d0d;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.membership-card {
+
+    position: relative;
+
+    min-height: 530px;
+
+    padding: 32px 26px 28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            145deg,
+            #191919,
+            #0d0d0d
+        );
+
+    border: 1px solid #333333;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.45);
+
+    transition: 0.4s ease;
+}
+
+
+.membership-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: #ff4d00;
+
+    box-shadow:
+        0 20px 45px rgba(255,77,0,0.20);
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.membership-card .card-top {
+
+    text-align: center;
+}
+
+.membership-card .card-top h2,
+.membership-card .card-top h3 {
+
+    color: #ffffff;
+
+    font-size: 23px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.membership-card .price {
+
+    color: #ff4d00;
+
+    font-size: 38px;
+
+    font-weight: 900;
+
+    margin-bottom: 8px;
+}
+
+.membership-card .price small {
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   DURATION
+========================= */
+
+.membership-card .duration {
+
+    display: inline-block;
+
+    padding: 5px 17px;
+
+    margin-bottom: 25px;
+
+    background: #292929;
+
+    color: #dddddd;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   CARD LINE
+========================= */
+
+.membership-card .card-line {
+
+    width: 100%;
+
+    height: 1px;
+
+    background: #303030;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.membership-card ul {
+
+    margin-bottom: 25px;
+}
+
+.membership-card ul li {
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid #292929;
+
+    color: #dddddd;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   JOIN BUTTON
+========================= */
+
+.membership-card .join-button,
+.membership-card > a {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 14px;
+
+    display: block;
+
+    text-align: center;
+
+    background: transparent;
+
+    border: 1px solid #ff4d00;
+
+    border-radius: 6px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s ease;
+}
+
+.membership-card .join-button:hover,
+.membership-card > a:hover {
+
+    background: #ff4d00;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   MOST POPULAR MEMBERSHIP
+========================================================= */
+
+.membership-card.popular {
+
+    border: 2px solid #ff4d00;
+
+    box-shadow:
+        0 0 30px rgba(255,77,0,0.22);
+}
+
+.membership-card.popular:hover {
+
+    transform: translateY(-13px);
+
+    box-shadow:
+        0 0 45px rgba(255,77,0,0.30);
+}
+
+
+/* =========================
+   POPULAR BADGE
+========================= */
+
+.membership-card .popular-badge {
+
+    position: absolute;
+
+    top: -14px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #ff4d00;
+
+    color: #ffffff;
+
+    padding: 7px 20px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ELITE PLAN
+========================================================= */
+
+.membership-card.elite {
+
+    border: 1px solid #ff4d00;
+
+    background:
+        linear-gradient(
+            145deg,
+            #21140d,
+            #0d0d0d
+        );
+
+    box-shadow:
+        0 0 30px rgba(255,77,0,0.20);
+}
+
+.membership-card.elite:hover {
+
+    border-color: #ff6a00;
+
+    box-shadow:
+        0 0 50px rgba(255,77,0,0.32);
+}
+
+
+/* Elite Label */
+
+.membership-card .elite-label {
+
+    position: absolute;
+
+    top: -14px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #ff4d00;
+
+    color: #ffffff;
+
+    padding: 7px 22px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TRAINING PACKAGES ONLY
+========================================================= */
+
+.packages {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 80px 5%;
+
+    background: #080808;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* =========================
+   TRAINING CARD
+========================= */
+
+.package-card {
+
+    position: relative;
+
+    min-height: 470px;
+
+    padding: 35px 28px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background:
+        linear-gradient(
+            145deg,
+            #191919,
+            #0d0d0d
+        );
+
+    border: 1px solid #333333;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.45);
+
+    transition: 0.4s ease;
+}
+
+.package-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: #ff4d00;
+
+    box-shadow:
+        0 20px 45px rgba(255,77,0,0.20);
+}
+
+
+/* Training Heading */
+
+.package-card h2 {
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+}
+
+
+/* Training Price */
+
+.package-card h3 {
+
+    color: #ff4d00;
+
+    font-size: 32px;
+
+    font-weight: 900;
+
+    margin-bottom: 12px;
+}
+
+
+/* Description */
+
+.package-card > p {
+
+    color: #999999;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Features */
+
+.package-card ul {
+
+    margin-bottom: 25px;
+}
+
+.package-card li {
+
+    padding: 11px 0;
+
+    border-bottom: 1px solid #292929;
+
+    color: #dddddd;
+
+    font-size: 14px;
+}
+
+
+/* Training Button */
+
+.package-card .btn {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    background: transparent;
+
+    border: 1px solid #ff4d00;
+
+    color: #ffffff;
+}
+
+.package-card .btn:hover {
+
+    background: #ff4d00;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TRAINING POPULAR
+========================================================= */
+
+.package-card.popular {
+
+    border: 2px solid #ff4d00;
+
+    box-shadow:
+        0 0 30px rgba(255,77,0,0.20);
+}
+
+.package-card.popular:hover {
+
+    transform: translateY(-13px);
+}
+
+
+/* Training Badge */
+
+.package-card .badge {
+
+    position: absolute;
+
+    top: -14px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #ff4d00;
+
+    color: #ffffff;
+
+    padding: 7px 20px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   MEMBERSHIP BENEFITS
+========================================================= */
+
+.membership-benefits {
+
+    padding: 90px 5%;
+
+    background: #111111;
+
+    text-align: center;
+}
+
+.membership-benefits h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+    color: #ff4d00;
+    font-weight: 900;
+
+    text-shadow: 0 0 15px rgba(255, 77, 0, 0.35);
+}
+.membership-benefit-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.membership-benefit {
+
+    padding: 30px 22px;
+
+    background: #191919;
+
+    border: 1px solid #292929;
+
+    border-radius: 13px;
+
+    transition: 0.3s ease;
+}
+
+.membership-benefit:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #ff4d00;
+
+    box-shadow:
+        0 12px 30px rgba(255,77,0,0.18);
+}
+
+.membership-benefit h3 {
+
+    color: #ff4d00;
+
+    font-size: 19px;
+
+    margin-bottom: 12px;
+}
+
+.membership-benefit p {
+
+    color: #aaaaaa;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MEMBERSHIP CTA
+========================================================= */
+
+.membership-cta {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.78),
+            rgba(0,0,0,0.90)
+        ),
+        url("images/gym-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.membership-cta p {
+
+    color: #ff4d00;
+
+    font-size: 12px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+.membership-cta h2 {
+
+    font-size: clamp(32px, 5vw, 55px);
+
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+}
+
+.membership-cta a {
+
+    display: inline-block;
+
+    padding: 14px 32px;
+
+    background: #ff4d00;
+
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+.membership-cta a:hover {
+
+    background: #ffffff;
+
+    color: #ff4d00;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   MEMBERSHIP PAGE RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .membership-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .membership-benefit-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .packages {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .membership-hero {
+
+        min-height: 420px;
+    }
+
+    .membership-container {
+
+        grid-template-columns: 1fr;
+
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .membership-card {
+
+        min-height: 520px;
+    }
+
+    .packages {
+
+        grid-template-columns: 1fr;
+
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .package-card {
+
+        min-height: 470px;
+    }
+
+    .membership-benefit-container {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+/* Trainers Section */
+
+.trainers-section {
+    min-height: 600px;
+    padding: 80px 8%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.trainers-content {
+    width: 45%;
+}
+
+.trainers-content h2 {
+    color: #ff4d00;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.trainers-content p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.trainers-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.trainers-content li {
+    color: white;
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.trainers-content .learn-more {
+    display: inline-block;
+    background-color: white;
+    color: #ff4d00;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.trainers-content .learn-more:hover {
+    background-color: #ff4d00;
+    color: white;
+    transform: translateY(-3px);
+}
+.trainers{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:80px 10%;
+}
+.trainers h2{
+    font-size:42px;
+    color:orangered;
+    margin-bottom:50px;
+}
+.trainer-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.trainer-card{
+    width:300px;
+    background:#222;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+.trainer-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(255,69,0,0.4);
+}
+.trainer-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+.trainer-card h3{
+    margin-top:16px;
+    font-size:26px;
+}
+
+.trainer-card p{
+    color:#ccc;
+    margin:15px 0 20px;
+}
+.socials{
+    margin-bottom:25px;
+}
+.socials a{
+    display:inline-block;
+    margin:5px;
+    padding:10px 18px;
+    background:orangered;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+    transition:0.3s;
+}
+.socials a:hover{
+    background:white;
+    color:orangered;
+}
+.pricing{
+    background:#1b1b1b;
+    color:white;
+    text-align:center;
+    padding:80px 10%;
+}
+.pricing h2{
+    font-size:42px;
+    color:orangered;
+    margin-bottom:50px;
+}
+.pricing-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+.price-card{
+    width:300px;
+    background:#2b2b2b;
+    border-radius:15px;
+    padding:35px;
+    transition:0.3s;
+}
+.popular{
+    border:3px solid orangered;
+    transform:scale(1.05);
+}
+.price-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(255,69,0,0.4);
+}
+.price-card h1{
+    font-size:20px;
+    margin:20px 0;
+    color:orangered;
+}
+
+.price-card span{
+    font-size:18px;
+    color:white;
+}
+.price-card ul{
+    list-style:none;
+    padding:0;
+    margin:30px 0;
+}
+
+.price-card li{
+    margin:30px 0;
+}
+.price-card button{
+    background:orangered;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.price-card button:hover{
+    background:white;
+    color:orangered;
+}
+/* Contact Us Section */
+
+.contact-section {
+    padding: 90px 8%;
+    background-color: #111;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contact-content h2 {
+    color: #ff4d00;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact-content > p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    width: 250px;
+    padding: 25px;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 77, 0, 0.3);
+}
+
+.contact-item h3 {
+    color: #ff4d00;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.contact-item p {
+    color: #ddd;
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+.contact-section .learn-more {
+    display: inline-block;
+    background-color: white;
+    color: #ff4d00;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.contact-section .learn-more:hover {
+    background-color: #ff4d00;
+    color: white;
+    transform: translateY(-3px);
+}
+/* ================================
+   PROFESSIONAL TRAINERS SECTION
+   ================================ */
+
+.trainers {
+    padding: 80px 6%;
+    background: #0d0d0d;
+    min-height: 100vh;
+}
+
+.trainers-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.trainers-heading p {
+    color: #ff4d00;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.trainers-heading h1 {
+    color: white;
+    font-size: 42px;
+    margin: 0 0 18px;
+    font-weight: 800;
+}
+
+.trainers-heading span {
+    color: #bdbdbd;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Trainer Cards Container */
+
+.trainer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+
+/* Individual Trainer Card */
+
+.trainers .trainer-card {
+    background: #151515;
+    border: 1px solid #2d2d2d;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.trainers .trainer-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff4d00;
+    box-shadow: 0 15px 35px rgba(255, 77, 0, 0.18);
+}
+
+
+/* Trainer Image */
+
+.trainer-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    background: #111;
+}
+
+.trainer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.trainers .trainer-card:hover .trainer-image img {
+    transform: scale(1.05);
+}
+
+
+/* Trainer Information */
+
+.trainer-info {
+    padding: 28px 25px 30px;
+    text-align: center;
+}
+
+.trainer-info h2 {
+    color: white;
+    font-size: 25px;
+    margin: 0 0 8px;
+}
+
+.trainer-info h3 {
+    color: #ff4d00;
+    font-size: 15px;
+    margin: 0 0 18px;
+    font-weight: 600;
+}
+
+.trainer-info p {
+    color: #bdbdbd;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+
+/* Trainer Specialties */
+
+.trainer-specialties {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.trainer-specialties span {
+    color: #eeeeee;
+    background: #222222;
+    border: 1px solid #333333;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .trainer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .trainers {
+        padding: 60px 5%;
+    }
+
+    .trainers-heading h1 {
+        font-size: 32px;
+    }
+
+    .trainer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .trainer-image {
+        height: 330px;
+    }
+
+}
+/* ============================= */
+/* CONTACT PAGE */
+/* ============================= */
+
+.contact-hero {
+    padding: 100px 8%;
+    background-color: #111;
+    text-align: center;
+}
+
+.contact-hero h2 {
+    color: #ff4d00;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    color: white;
+    font-size: 19px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+
+/* Contact Main */
+
+.contact-page {
+    padding: 80px 8%;
+    background-color: #181818;
+
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+
+/* Contact Details */
+
+.contact-details {
+    width: 45%;
+}
+
+.contact-details h2 {
+    color: #ff4d00;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.contact-details > p {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* Contact Boxes */
+
+.contact-box {
+    background-color: #222;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #ff4d00;
+}
+
+.contact-box h3 {
+    color: #ff4d00;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+.contact-box p {
+    color: #ddd;
+    margin: 7px 0;
+    font-size: 16px;
+}
+
+
+/* Contact Form */
+
+.contact-form {
+    width: 45%;
+    background-color: #222;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.contact-form h2 {
+    color: #ff4d00;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+.contact-form label {
+    display: block;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px;
+    margin-bottom: 20px;
+
+    background-color: #111;
+    color: white;
+
+    border: 1px solid #444;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ff4d00;
+}
+
+
+.contact-form button {
+    width: 100%;
+
+    padding: 15px;
+
+    background-color: #ff4d00;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.contact-form button:hover {
+    background-color: white;
+    color: #ff4d00;
+}
+  
+
+/* =========================================
+   CONTACT FOOTER
+========================================= */
+
+footer {
+
+    background: #090909;
+
+    color: #aaa;
+
+    text-align: center;
+
+    padding: 25px 20px;
+
+    font-size: 16px;
+}
+
+
+footer p {
+
+    margin: 0;
+}
+/* =================================
+   HOME PAGE - MEMBERSHIP SECTION
+   ================================= */
+
+.membership-section {
+    min-height: 600px;
+    padding: 90px 8%;
+    background: #0d0d0d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.membership-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.membership-content h2 {
+    color: #ff4d00;
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.membership-content p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.membership-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.membership-content li {
+    color: #fff;
+    font-size: 17px;
+    margin: 14px 0;
+}
+
+.membership-content .learn-more {
+    margin-top: 20px;
+}
+
+
+/* =================================
+   HOME PAGE - TRAINING PACKAGES
+   ================================= */
+
+.training-section {
+    min-height: 600px;
+    padding: 90px 8%;
+    background: #151515;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.training-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.training-content h2 {
+    color: #ff4d00;
+    font-size: 45px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.training-content p {
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.training-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.training-content li {
+    color: #fff;
+    font-size: 17px;
+    margin: 14px 0;
+}
+
+.training-content .learn-more {
+    margin-top: 20px;
+}
+
+
+/* =================================
+   HOME PAGE RESPONSIVE
+   ================================= */
+
+@media (max-width: 700px) {
+
+    .membership-section,
+    .training-section {
+        padding: 70px 6%;
+    }
+
+    .membership-content h2,
+    .training-content h2 {
+        font-size: 34px;
+    }
+
+    .membership-content p,
+    .training-content p {
+        font-size: 16px;
+    }
+
+    .membership-content li,
+    .training-content li {
+        font-size: 15px;
+    }
+
+}
+.map-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+/* =========================================
+   CARDIO PACKAGE - FINAL FIX
+========================================= */
+
+body .cardio-section {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 60px 35px;
+
+    background: #080808;
+
+    display: grid !important;
+    grid-template-columns: 310px 1fr !important;
+    gap: 30px;
+
+    box-sizing: border-box;
+
+    align-items: stretch;
+}
+
+
+/* =========================================
+   BASIC CARD
+========================================= */
+
+body .cardio-package-card {
+    width: 310px !important;
+    min-height: 500px;
+
+    padding: 40px 30px;
+
+    background: linear-gradient(
+        145deg,
+        #1b1b1b,
+        #0d0d0d
+    );
+
+    border: 1px solid #333;
+    border-radius: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+body .cardio-package-card h2 {
+    color: white;
+    font-size: 26px;
+    line-height: 1.1;
+    margin: 0 0 25px;
+}
+
+
+body .cardio-package-card h3 {
+    color: #ff5500;
+    font-size: 34px;
+    margin: 0 0 15px;
+}
+
+
+body .package-subtitle {
+    color: #aaa;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+
+body .cardio-package-card ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+body .cardio-package-card li {
+    color: white;
+    font-size: 15px;
+    padding: 15px 0;
+
+    border-bottom: 1px solid #292929;
+}
+
+
+/* =========================================
+   ENROLL BUTTON
+========================================= */
+
+body .enroll-btn {
+    margin-top: auto;
+
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #ff5500;
+    border-radius: 30px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    box-sizing: border-box;
+
+    transition: 0.3s;
+}
+
+
+body .enroll-btn:hover {
+    background: #ff5500;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   EQUIPMENT CONTAINER
+========================================= */
+
+body .cardio-equipment {
+    width: 100%;
+
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 20px;
+
+    align-items: stretch;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   EQUIPMENT CARDS
+========================================= */
+
+body .equipment-item {
+    min-width: 0;
+
+    text-align: center;
+
+    background: linear-gradient(
+        180deg,
+        #151515,
+        #080808
+    );
+
+    border: 1px solid #222;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+
+body .equipment-item:hover {
+    transform: translateY(-8px);
+
+    border-color: #ff5500;
+
+    box-shadow: 0 10px 30px rgba(255, 85, 0, 0.15);
+}
+
+
+/* =========================================
+   IMAGES
+========================================= */
+
+body .equipment-item img {
+    width: 100% !important;
+    height: 300px !important;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   EQUIPMENT TEXT
+========================================= */
+
+body .equipment-item h2 {
+    color: white;
+
+    font-size: 21px;
+
+    margin: 20px 10px 10px;
+}
+
+
+body .equipment-item p {
+    color: #aaa;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin: 0 10px 25px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    body .cardio-section {
+        grid-template-columns: 1fr !important;
+    }
+
+    body .cardio-package-card {
+        width: 100% !important;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    body .cardio-equipment {
+        grid-template-columns: 1fr !important;
+    }
+
+    body .equipment-item img {
+        height: 280px !important;
+    }
+
+}
+ /* =========================================
+   FINAL MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    /* NAVBAR */
+    nav {
+        padding: 12px 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo-img {
+        height: 60px;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    body {
+        padding-top: 120px;
+    }
+
+
+    /* HERO */
+    .hero {
+        min-height: 75vh;
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .hero h1:hover {
+        font-size: 36px;
+        letter-spacing: 0;
+    }
+
+    .hero p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .btn,
+    .join-btn {
+        padding: 13px 28px;
+        font-size: 16px;
+    }
+
+
+    /* ABOUT */
+    .about {
+        padding: 60px 20px;
+        gap: 30px;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .about-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+
+    /* PAGE BANNER */
+    .page-banner {
+        padding: 60px 20px;
+    }
+
+    .page-banner h1 {
+        font-size: 36px;
+    }
+
+    .page-banner p {
+        font-size: 16px;
+    }
+
+
+    /* SERVICES */
+    .services-hero {
+        padding: 70px 20px;
+    }
+
+    .services-hero h2 {
+        font-size: 36px;
+    }
+
+    .services-hero p {
+        font-size: 16px;
+    }
+
+    .services-intro {
+        padding: 55px 20px;
+    }
+
+    .services-intro h2 {
+        font-size: 30px;
+    }
+
+    .services-intro p {
+        font-size: 16px;
+    }
+
+    .services-page {
+        padding: 60px 20px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-box {
+        padding: 30px 20px;
+    }
+
+
+    /* SERVICES IMAGE SECTION */
+    .services-section {
+        padding: 60px 20px;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .services-image,
+    .services-content {
+        width: 100%;
+    }
+
+    .services-image img {
+        height: 280px;
+    }
+
+    .services-content h2 {
+        font-size: 32px;
+    }
+
+    .services-content p,
+    .services-content li {
+        font-size: 16px;
+    }
+
+
+    /* WHY US */
+    .why-us {
+        padding: 60px 20px;
+    }
+
+    .why-us h2 {
+        font-size: 32px;
+    }
+
+    .why-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-container div {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* HOME CTA */
+    .home-cta {
+        padding: 70px 20px;
+    }
+
+    .home-cta h2 {
+        font-size: 32px;
+    }
+
+    .home-cta p {
+        font-size: 17px;
+    }
+
+
+    /* MEMBERSHIP */
+    .membership-hero {
+        padding: 70px 20px;
+        min-height: 350px;
+    }
+
+    .membership-hero h2 {
+        font-size: 36px;
+    }
+
+    .membership-hero p {
+        font-size: 16px;
+    }
+
+    .membership-intro {
+        padding: 55px 20px 30px;
+    }
+
+    .membership-intro h2 {
+        font-size: 30px;
+    }
+
+    .membership-container {
+        grid-template-columns: 1fr;
+        padding: 40px 20px 70px;
+    }
+
+    .membership-card {
+        min-height: auto;
+    }
+
+
+    /* TRAINING PACKAGES */
+    .packages {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+    }
+
+    .package-card {
+        min-height: auto;
+    }
+
+
+    /* TRAINERS */
+    .trainers {
+        padding: 60px 20px;
+    }
+
+    .trainers-heading h1 {
+        font-size: 32px;
+    }
+
+    .trainer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .trainers .trainer-card {
+        width: 100%;
+    }
+
+    .trainer-image {
+        height: 300px;
+    }
+
+
+    /* CONTACT */
+    .contact-hero {
+        padding: 70px 20px;
+    }
+
+    .contact-hero h2 {
+        font-size: 36px;
+    }
+
+    .contact-hero p {
+        font-size: 16px;
+    }
+
+    .contact-page {
+        padding: 60px 20px;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .contact-details,
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+
+    .contact-details h2 {
+        font-size: 32px;
+    }
+
+
+    /* MAP */
+    .map-container {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+
+    /* FOOTER */
+    footer {
+        padding: 20px 15px;
+        font-size: 14px;
+    }
+}
+/* ===== TRAINERS MOBILE FIX ===== */
+
+@media (max-width: 700px) {
+
+    .trainers-section {
+        display: block;
+        padding: 60px 20px;
+    }
+
+    .trainers-section > * {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .trainers-heading {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .trainers-heading h1,
+    .trainers-heading h2 {
+        font-size: 34px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .trainers-heading p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    .trainer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 25px;
+    }
+
+    .trainer-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .trainer-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+/* ===== ABOUT PAGE MOBILE FIX ===== */
+
+@media (max-width: 700px) {
+
+    .about-page {
+        padding: 50px 18px;
+    }
+
+    .about-page .about-card {
+        padding: 28px 22px;
+        margin-bottom: 22px;
+        border-radius: 12px;
+    }
+
+    .about-page h2 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .about-page p {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 12px;
+    }
+
+    .about-page li {
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 8px;
+    }
+
+    .page-banner {
+        padding: 45px 18px;
+    }
+
+    .page-banner h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .page-banner p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
+/* =================================
+   ABOUT PAGE - PROFESSIONAL SPACING
+================================= */
+
+.about-page {
+    width: 92%;
+    max-width: 1100px;
+    margin: 70px auto;
+}
+
+.about-page .about-card {
+    padding: 40px 45px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+}
+
+.about-page .about-card h2 {
+    font-size: 27px;
+    margin-bottom: 22px;
+}
+
+.about-page .about-card p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.about-page .about-card ul {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.about-page .about-card ul li {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+
+/* ==============================
+   ABOUT PAGE MOBILE
+============================== */
+
+@media (max-width: 700px) {
+
+    .about-page {
+        width: 94%;
+        margin: 45px auto;
+        padding: 0;
+    }
+
+    .about-page .about-card {
+        padding: 30px 25px;
+        margin-bottom: 25px;
+    }
+
+    .about-page .about-card h2 {
+        font-size: 25px;
+        line-height: 1.35;
+        margin-bottom: 18px;
+    }
+
+    .about-page .about-card p {
+        font-size: 16px;
+        line-height: 1.85;
+        margin-bottom: 15px;
+    }
+
+    .about-page .about-card ul {
+        padding-left: 0;
+    }
+
+    .about-page .about-card ul li {
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 10px;
+    }
+}
