@@ -3239,4 +3239,78 @@ body .equipment-item p {
         max-width: 350px !important;
         margin: 0 auto !important;
     }
+    html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* All images stay inside mobile screen */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent sections from becoming wider than screen */
+section,
+div {
+    max-width: 100%;
+}
+
+/* Mobile contact/map fix */
+@media screen and (max-width: 700px) {
+
+    .contact-page {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .contact-details,
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        display: block;
+    }
+
+    /* Prevent long text from breaking the screen */
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    a,
+    li {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    /* Trainer images */
+    .trainer-image,
+    .trainer-image img {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Equipment images */
+    .equipment-item img {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
 }
