@@ -3089,3 +3089,154 @@ body .equipment-item p {
         margin-bottom: 10px;
     }
 }
+/* ===== MOBILE TRAINERS SECTION ===== */
+@media (max-width: 768px) {
+
+    .trainers {
+        padding: 50px 15px;
+        min-height: auto;
+        overflow: hidden;
+    }
+
+    .trainers-heading {
+        padding: 0 10px;
+    }
+
+    .trainers-heading h2 {
+        font-size: 28px;
+    }
+
+    .trainers-heading p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .trainer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        width: 100%;
+        margin: 30px auto 0;
+    }
+
+    .trainer-card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .trainer-card img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+}
+
+.contact-box a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    color: white !important;
+}
+/* =========================
+   TRAINERS MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+
+    .trainers {
+        padding: 100px 15px 50px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .trainers-heading {
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+
+    .trainers-heading h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .trainers-heading span {
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+    .trainer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .trainer-card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .trainer-image {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+    }
+
+    .trainer-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .trainer-info {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .trainer-info h2 {
+        font-size: 22px;
+    }
+
+    .trainer-info h3 {
+        font-size: 15px;
+    }
+
+    .trainer-info p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .trainer-specialties {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .trainers .trainer-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 25px !important;
+    }
+
+    .trainers .trainer-card {
+        width: 100% !important;
+        max-width: 350px !important;
+        margin: 0 auto !important;
+    }
+}
