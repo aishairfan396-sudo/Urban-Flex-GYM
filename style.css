@@ -17,15 +17,16 @@ body{
     padding-top: 80px;
 }
 nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:#111;
     position:fixed;
     top:0;
     left:0;
     width:100%;
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    background:#111;
     z-index:1000;
 }
 .logo{
@@ -33,10 +34,15 @@ nav{
     font-size:30px;
     font-weight:bold;
 }
-.logo-img{
-    height: 100px;/*adjust size*/
-    width:auto;
-    display:block;
+.logo-img {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    transform: translateY(-50%);
+    z-index: 10;
+    object-fit: contain;
 }
 .logo span{
     color:white;
@@ -2611,7 +2617,7 @@ body .equipment-item p {
     }
 
     .logo-img {
-        height: 60px;
+        height: 80px;
     }
 
     nav ul {
