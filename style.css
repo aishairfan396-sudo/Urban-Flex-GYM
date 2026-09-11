@@ -3399,3 +3399,43 @@ div {
     }
 }
 
+/* =========================================
+   MOBILE - LEFT SIDE LOGO
+========================================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        align-items: flex-start;
+        padding: 8px 15px 12px;
+    }
+
+    .logo-img {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+
+        height: 65px;
+        width: auto;
+
+        margin: 0;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 8px 14px;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    body {
+        padding-top: 135px;
+    }
+}
+
+
