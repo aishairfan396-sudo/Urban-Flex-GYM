@@ -3320,3 +3320,82 @@ div {
     }
 }
 }
+/* =========================================
+   FINAL MOBILE NAVBAR + LOGO FIX
+========================================= */
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: auto;
+        min-height: 125px;
+
+        padding: 8px 10px 12px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 8px;
+    }
+
+    /* LOGO */
+    .logo-img {
+        position: relative;
+        left: auto;
+        top: auto;
+
+        transform: none;
+
+        height: 65px;
+        width: auto;
+
+        z-index: 10;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+    nav ul {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 8px 14px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    /* PAGE CONTENT NAVBAR KE NEECHE RAHE */
+    body {
+        padding-top: 135px;
+    }
+}
+
